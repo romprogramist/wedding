@@ -1,0 +1,34 @@
+﻿@{
+	ViewBag.Title = "Add product";
+}
+
+<environment include="Development">
+	<script src="~/js/admin/product.js" asp-append-version="true"></script>
+</environment>
+<environment exclude="Development">
+	<script src="~/js/admin-product-bundle.js" asp-append-version="true"></script>
+</environment>
+
+<a href="/admin/product">Back to list</a>
+<br/>
+<br/>
+<h1>Add product</h1>
+
+
+<form class="product-add">
+	<label>
+    	Name
+    	<input type="text" name="name"/>
+    </label>
+	<label>
+		Model
+		<input type="text" name="model"/>
+	</label>
+	<label>
+		Category
+		<select name="categoryId">
+		</select>
+	</label>
+	<input class="form-file" type="file" accept="image/*"/>
+	<button type="submit">Add product</button>
+</form>

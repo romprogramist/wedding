@@ -1,0 +1,310 @@
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  padding-bottom: 40px;
+}
+.main .wrapper {
+  background: url("/images/img/main-bg.jpg") center center/cover no-repeat;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.main .wrapper h1 {
+  padding-top: 450px;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+}
+.main h2 {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 28px;
+}
+.main > p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.main > img {
+  width: 150px;
+  display: flex;
+  margin: 3px auto 0 auto;
+}
+
+.dear-guests {
+  padding: 40px 0;
+  background: #FCFCF9;
+}
+.dear-guests .wrapper > img {
+  width: 50px;
+  display: flex;
+  margin: 0 auto;
+}
+.dear-guests .wrapper > h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 10px;
+}
+.dear-guests .wrapper > p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 110%;
+}
+.dear-guests .wrapper .items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+.dear-guests .wrapper .items .item {
+  width: 55%;
+}
+.dear-guests .wrapper .items .item > img {
+  width: 100%;
+}
+.dear-guests .wrapper .items .item > h3 {
+  text-align: center;
+  font-size: 28px;
+  line-height: 130%;
+}
+.dear-guests .wrapper .items .item > p {
+  text-align: center;
+  font-size: 18px;
+}
+.dear-guests .wrapper .items .item-img {
+  max-width: 45%;
+}
+.dear-guests .wrapper .items .item:last-child {
+  padding-right: 20px;
+}
+
+.location {
+  padding: 40px 0;
+}
+.location .wrapper .items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.location .wrapper .items .item {
+  width: 55%;
+}
+.location .wrapper .items .item > h2 {
+  text-align: center;
+  font-size: 33px;
+}
+.location .wrapper .items .item > h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+.location .wrapper .items .item > .circle {
+  margin-top: 30px;
+  background: #7d7d7d;
+  border-radius: 50px;
+  padding: 10px 14px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  line-height: 120%;
+}
+.location .wrapper .items .item > img {
+  width: 100%;
+}
+.location .wrapper .items .item-img {
+  max-width: 45%;
+}
+.location .wrapper .items .item:first-child {
+  padding-left: 20px;
+}
+
+.daily-program {
+  background: #FCFCF9;
+  padding: 40px 20px 40px 15px;
+}
+.daily-program .wrapper > h2 {
+  text-align: center;
+  font-size: 28px;
+}
+.daily-program .wrapper .items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto 0 auto;
+}
+.daily-program .wrapper .items .item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+.daily-program .wrapper .items .item > img {
+  width: 120px;
+}
+.daily-program .wrapper .items .item > div {
+  height: 90px;
+  width: 201px;
+}
+.daily-program .wrapper .items .item > div > p {
+  font-size: 18px;
+}
+.daily-program .wrapper .items .item > div > h2 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+.daily-program .wrapper .items .item > div > h3 {
+  margin-top: 5px;
+  line-height: 110%;
+  font-size: 14px;
+}
+.daily-program .wrapper .items .item:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 130px;
+  width: 1px;
+  background: #2B2A29;
+}
+.daily-program .wrapper > img {
+  width: 60px;
+  display: flex;
+  margin: 60px auto 0 auto;
+}
+
+.before-the-wedding {
+  background: url("/images/img/before-the-wedding.jpg") center center/cover no-repeat;
+  height: 550px;
+  position: relative;
+}
+.before-the-wedding .wrapper {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.before-the-wedding .wrapper > h2 {
+  color: #fff;
+  font-size: 41px;
+  text-align: center;
+}
+.before-the-wedding .wrapper > .items {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  justify-content: center;
+}
+.before-the-wedding .wrapper > .items > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+}
+.before-the-wedding .wrapper > .items > div > span {
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.application {
+  padding: 40px 20px;
+}
+.application > h2 {
+  text-align: center;
+  font-size: 28px;
+}
+.application > p {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 25px;
+  line-height: 110%;
+}
+.application > form {
+  margin-top: 30px;
+}
+.application .application-form {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+.application .application-form label {
+  display: block;
+  margin-top: 20px;
+  color: #555;
+  font-size: 14px;
+  text-align: left;
+}
+.application .application-form input[type=text],
+.application .application-form select {
+  width: 100%;
+  padding: 8px 0;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background: none;
+  font-size: 14px;
+  color: #333;
+  transition: border-bottom-color 0.3s;
+}
+.application .application-form input[type=text]:focus,
+.application .application-form select:focus {
+  border-bottom-color: #b3c7e6;
+  outline: none;
+}
+.application .button {
+  background-color: #b3c7e6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: flex;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+.application .button:hover {
+  background-color: #91aed6;
+}
+
+.see-you-later > div {
+  padding: 40px 20px;
+}
+.see-you-later > div h2 {
+  font-size: 28px;
+  text-align: center;
+}
+.see-you-later > div p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=home.css.map */
