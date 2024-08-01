@@ -18,3 +18,10 @@ Then for redeploying:
 1. Publish to folder your project
 2. Run local-script.sh
 3. Run server-script.sh on server
+
+sudo unzip -o alikandfloraswedding.zip -d /var/www/alikandfloraswedding
+sudo rm alikandfloraswedding.zi
+
+
+chmod -R 777 wwwrootp
+curl localhost:5014

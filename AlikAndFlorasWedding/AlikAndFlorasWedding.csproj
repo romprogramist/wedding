@@ -76,6 +76,7 @@
       <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
       <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.6" />
       <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.26.1" />
+      <PackageReference Include="Telegram.Bot" Version="19.0.0" />
     </ItemGroup>
 
     <ItemGroup>

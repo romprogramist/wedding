@@ -3,7 +3,7 @@ server {
         
         index index.html index.htm index.nginx-debian.html;
         
-        server_name your-domain-name; # put your domain name
+        server_name alik-flora-wedding.ru; # put your domain name
 
         location / {
                 proxy_pass http://localhost:5000; # write there same port that pointed in your_project_name.service file

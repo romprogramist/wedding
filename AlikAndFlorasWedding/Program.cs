@@ -11,6 +11,7 @@ using AlikAndFlorasWedding.Services.CategoryService;
 using AlikAndFlorasWedding.Services.EmailService;
 using AlikAndFlorasWedding.Services.ProductService;
 using AlikAndFlorasWedding.Services.ReviewService;
+using AlikAndFlorasWedding.Services.TelegramService;
 using AlikAndFlorasWedding.Services.UserService;
 using Swashbuckle.AspNetCore.Filters;
 
@@ -41,6 +42,7 @@ builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ITelegramService, TelegramService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
