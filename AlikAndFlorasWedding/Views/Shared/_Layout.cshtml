@@ -4,6 +4,7 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>@ViewData["Title"] - AlikAndFlorasWedding</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.svg">
 	<environment include="Development">
 		<link rel="stylesheet" href="~/css/layout.css" asp-append-version="true">
 	</environment>
@@ -58,52 +59,52 @@
 </div>
 <div class="overlay" id="overlay">
 	<div class="modal" id="application">
-		<form class="application-form">
-			<span class="close-m" title="Закрыть">&times;</span>
-			<h2>Оставьте заявку</h2>
-			<div>Оставьте заявку, и мы перезвоним Вам в ближайшее время</div>
-			<div>
-				<input placeholder="Введите имя" type="text" name="name">
-			</div>
-			<div>
-				<input placeholder="Введите номер" type="tel" name="phone">
-			</div>
-			<p>*Отправляя заявку, Вы потверждаете согласие согласие на обработку введенных персональных данных</p>
-			<div class="validation"></div>
-			<button type="submit">Оставить заявку</button>
-		</form>
+		@* <form class="application-form"> *@
+		@* 	<span class="close-m" title="Закрыть">&times;</span> *@
+		@* 	<h2>Оставьте заявку</h2> *@
+		@* 	<div>Оставьте заявку, и мы перезвоним Вам в ближайшее время</div> *@
+		@* 	<div> *@
+		@* 		<input placeholder="Введите имя" type="text" name="name"> *@
+		@* 	</div> *@
+		@* 	<div> *@
+		@* 		<input placeholder="Введите номер" type="tel" name="phone"> *@
+		@* 	</div> *@
+		@* 	<p>*Отправляя заявку, Вы потверждаете согласие согласие на обработку введенных персональных данных</p> *@
+		@* 	<div class="validation"></div> *@
+		@* 	<button type="submit">Оставить заявку</button> *@
+		@* </form> *@
 	</div>
 	<div class="modal" id="application-success">
 		<div>
-			Заявка отправлена
+			Будем счастливы видеть каждого из вас на нашем празднике!
 		</div>
 		<div>
-			Совсем скоро мы Вам позвоним
+			С любовью, Алик и Флора
 		</div>
 	</div>
 	<div class="modal" id="application-error">
-		<div>
-			Что-то пошло не так
-		</div>
-		<div>
-			Попробуйте позже пожалуйста или позвоните нам <a href="tel:+0000000">+0000000</a>
-		</div>
+		@* <div> *@
+		@* 	Что-то пошло не так *@
+		@* </div> *@
+		@* <div> *@
+		@* 	Попробуйте позже пожалуйста или позвоните нам <a href="tel:+0000000">+0000000</a> *@
+		@* </div> *@
 	</div>
 	<div class="modal" id="review-success">
-		<div>
-			Ваш отзыв отправлен на модерацию и в скором времени будет размещен на сайте.
-		</div>
-		<div>
-			Спасибо Вам за обратную связь!
-		</div>
+		@* <div> *@
+		@* 	Ваш отзыв отправлен на модерацию и в скором времени будет размещен на сайте. *@
+		@* </div> *@
+		@* <div> *@
+		@* 	Спасибо Вам за обратную связь! *@
+		@* </div> *@
 	</div>
 	<div class="modal" id="review-error">
-		<div>
-			Что-то пошло не так
-		</div>
-		<div>
-			Попробуйте позже пожалуйста или позвоните нам <a href="tel:+0000000">+0000000</a>
-		</div>
+		@* <div> *@
+		@* 	Что-то пошло не так *@
+		@* </div> *@
+		@* <div> *@
+		@* 	Попробуйте позже пожалуйста или позвоните нам <a href="tel:+0000000">+0000000</a> *@
+		@* </div> *@
 	</div>
 </div>
 <environment include="Development">

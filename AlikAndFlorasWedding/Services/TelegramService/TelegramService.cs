@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using RSiteTemplate.Models.Dtos;
+﻿using AlikAndFlorasWedding.Models.Dtos;
+using Microsoft.EntityFrameworkCore;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
+using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 
 namespace AlikAndFlorasWedding.Services.TelegramService;
@@ -49,7 +50,7 @@ public class TelegramService : ITelegramService
         cts.Cancel();
     }
 
-    private async Task HandleUpdateAsync(ITelegramBotClient botClient, DbLoggerCategory.Update update, CancellationToken cancellationToken)
+    private async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
     {
         // Обработка обновлений, если это необходимо
     }
@@ -67,3 +68,10 @@ public class TelegramService : ITelegramService
         return Task.CompletedTask;
     }
 }
+
+
+
+
+
+
+

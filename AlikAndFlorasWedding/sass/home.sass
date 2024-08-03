@@ -100,6 +100,7 @@ img
                     text-align: center
                     margin-top: 10px
                 & > .circle
+                    display: block
                     margin-top: 30px
                     background: #7d7d7d
                     border-radius: 50px
@@ -250,6 +251,9 @@ img
     .button:hover 
         background-color: #91aed6
 .see-you-later
+    & > img
+        display: flex
+        margin: 0 auto
     & > div
         padding: 40px 20px
         h2
@@ -258,3 +262,27 @@ img
         p
             text-align: center
             margin-top: 20px
+            
+
+@media screen and ( min-width: 440px )
+    .main
+        .wrapper
+            h1
+                padding-top: 560px
+@media screen and ( min-width: 550px )
+    .main
+        .wrapper
+            h1
+                padding-top: 760px
+                
+@media screen and ( min-width: 750px )
+    .main
+        .wrapper
+            h1
+                padding-top: 960px
+                
+@media screen and ( min-width: 930px )
+    .main
+        .wrapper
+            h1
+                padding-top: 1160px

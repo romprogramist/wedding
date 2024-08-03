@@ -1,5 +1,5 @@
 ﻿@{
-	ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Алик Флора";
 }
 
 @section Styles {
@@ -56,10 +56,10 @@
 			<div class="item">
 				<h2>LOCATION</h2>
 				<h3>Будем ждать вас по адресу:</h3>
-				<div class="circle">
+				<a href="https://yandex.ru/maps/33/vladikavkaz/house/ulitsa_kotsoyeva_75/YE0YcABkSkwBQFppfXxzd3VhZw==/?ll=44.674585%2C43.026775&z=19.79" class="circle">
 					Ресторан «Владикавказ» <br>
 					ул. Коцаева, 75
-				</div>
+				</a>
 			</div>
 			<div class="item item-img">
 				<img src="/images/img/location.jpg" alt="">
@@ -125,12 +125,12 @@
 	<form class="application-form form-box">
 		<label>
 			Имя Фамилия
-			<input placeholder="Роман Агабабян" type="text" name="name">
+			<input placeholder="Иван Иванов" type="text" name="name">
 		</label>
 		<label for="attendance">Сможете ли вы присоединиться к нашему празднику?
 			<select name="attendance" id="attendance">
-				<option value="yes">Да, могу</option>
-				<option value="no">Нет, не могу</option>
+				<option value="Да, могу">Да, могу</option>
+				<option value="Нет, не могу">Нет, не могу</option>
 			</select>
 		</label>
 		<label for="guests">Количество гостей (1-10):

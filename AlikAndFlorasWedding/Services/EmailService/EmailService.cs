@@ -50,7 +50,8 @@ public class EmailService : IEmailService
     {
         return
             $"<p>Имя: {application.Name}</p>" +
-            $"<p>Телефон: {application.Phone}</p>" +
+            $"<p>Телефон: {application.Attendance}</p>" +
+            $"<p>Телефон: {application.Guests}</p>" +
             $"<p>Источник: {application.UtmInfo}</p>";
     }
     

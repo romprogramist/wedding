@@ -18,7 +18,7 @@ public class ApplicationService : IApplicationService
         {
             CreationDateTime = DateTime.Now.ToUniversalTime(),
             Name = application.Name,
-            Phone = application.Phone,
+            // Phone = application.Phone,
             SitePage = application.SitePage,
             AdditionalInfo = application.AdditionalInfo,
             UtmInfo = application.UtmInfo,

@@ -122,6 +122,7 @@ img {
   margin-top: 10px;
 }
 .location .wrapper .items .item > .circle {
+  display: block;
   margin-top: 30px;
   background: #7d7d7d;
   border-radius: 50px;
@@ -295,6 +296,10 @@ img {
   background-color: #91aed6;
 }
 
+.see-you-later > img {
+  display: flex;
+  margin: 0 auto;
+}
 .see-you-later > div {
   padding: 40px 20px;
 }
@@ -305,6 +310,27 @@ img {
 .see-you-later > div p {
   text-align: center;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 440px) {
+  .main .wrapper h1 {
+    padding-top: 560px;
+  }
+}
+@media screen and (min-width: 550px) {
+  .main .wrapper h1 {
+    padding-top: 760px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .main .wrapper h1 {
+    padding-top: 960px;
+  }
+}
+@media screen and (min-width: 930px) {
+  .main .wrapper h1 {
+    padding-top: 1160px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

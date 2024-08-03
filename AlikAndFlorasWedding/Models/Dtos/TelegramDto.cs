@@ -1,4 +1,5 @@
-namespace RSiteTemplate.Models.Dtos;
+
+namespace AlikAndFlorasWedding.Models.Dtos;
 
 public class TelegramDto
 {

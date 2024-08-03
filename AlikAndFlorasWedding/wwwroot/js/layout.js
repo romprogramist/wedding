@@ -7,7 +7,7 @@
     const applicationForms = document.querySelectorAll('form.application-form');
     const applicationCompletedModal = document.getElementById('application-success');
     const applicationCrashedModal = document.getElementById('application-error');
-    formRequest(applicationForms, '/api/application/send', applicationCompletedModal, applicationCrashedModal, ['name', 'phone']);
+    formRequest(applicationForms, '/api/application/send', applicationCompletedModal, applicationCrashedModal, ['name', 'attendance', 'guests']);
 
     const reviewForms = document.querySelectorAll('form.review-form');
     const reviewCompletedModal = document.getElementById('review-success');

@@ -1,4 +1,4 @@
-﻿using RSiteTemplate.Models.Dtos;
+﻿using AlikAndFlorasWedding.Models.Dtos;
 
 namespace AlikAndFlorasWedding.Services.TelegramService;
 

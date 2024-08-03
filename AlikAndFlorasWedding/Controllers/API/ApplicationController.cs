@@ -4,7 +4,6 @@ using AlikAndFlorasWedding.Services.ApplicationService;
 using AlikAndFlorasWedding.Services.EmailService;
 using AlikAndFlorasWedding.Services.TelegramService;
 using Microsoft.AspNetCore.Mvc;
-using RSiteTemplate.Models.Dtos;
 
 namespace AlikAndFlorasWedding.Controllers.API;
 
@@ -39,9 +38,10 @@ public class ApplicationController : ControllerBase
 
         var requestTelegram = new TelegramDto
         {
-            ChatIds = new List<string> {"168614886", "343210857"},
+            ChatIds = new List<string> {"168614886", "663583254", "1906872599", "6742119765"},
             Message = "*Имя:* " + application.Name + "\n" +
-                      "*Телефон:* " + application.Phone + "\n" 
+                      "*Можешь приехать:* " + application.Attendance + "\n" +
+                        "*Сколько человек:* " + application.Guests + "\n" 
         };
 
         // await _applicationService.SaveApplicationAsync(application);
